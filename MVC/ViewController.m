@@ -11,6 +11,7 @@
 #import "UserViewController.h"
 #import "MVPUserViewController.h"
 #import "MVVMUserViewController.h"
+#import "NSString+Validate.h"
 
 @interface ViewController ()
 
@@ -20,6 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    BOOL t = [NSString isAllNum:@"xyz"];
+    NSLog(@"tt==>%d", t);
 
 }
 
